@@ -1,3 +1,6 @@
+import { useSelector } from "react-redux";
+import { Navigate } from "react-router-dom";
+
 import {
   RiEdit2Line,
   RiErrorWarningLine,
@@ -11,6 +14,11 @@ const Profile = () => {
   const [enabled, setEnabled] = useState(false);
   const [enabled2, setEnabled2] = useState(false);
   const [enabled3, setEnabled3] = useState(false);
+
+  const auth = useSelector((state) => state.auth);
+  if (!auth.loggedIn) {
+    return <Navigate to="/login" replace />;
+  }
   return (
     <>
       {/* Profile  */}

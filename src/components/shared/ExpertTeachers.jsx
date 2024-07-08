@@ -5,7 +5,7 @@ const ExpertTeachers = (props) => {
   const { title, course, teacher, logo, image } = props;
 
   return (
-    <div className="bg-secondary-100 rounded-xl">
+    <div className="bg-secondary-100 rounded-xl cursor-pointer">
       {/* Number of tickets */}
       <div className="p-0 ">
         <div className="w-full h-auto bg-black rounded-t-xl relative">

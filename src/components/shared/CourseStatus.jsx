@@ -1,6 +1,6 @@
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { FaNodeJs } from "react-icons/fa";
+
 import { GoDatabase } from "react-icons/go";
 
 const CourseStatus = () => {
@@ -84,48 +84,44 @@ const CourseStatus = () => {
         </div>
         {information.map((data) => {
           return (
-            <>
-              <div
-                key={data.id}
-                className="grid grid-cols-1 md:grid-cols-5 gap-4 items-center mb-4 bg-secondary-900 p-4 rounded-xl"
-              >
-                <div>
-                  <h5 className="md:hidden text-white font-bold mb-2">
-                    Specialization
-                  </h5>
-                  <span>{data.logo}</span>
-                </div>
-                <div>
-                  <h5 className="md:hidden text-white font-bold mb-2">
-                    Description
-                  </h5>
-                  <p>{data.description}</p>
-                </div>
-                <div>
-                  <h5 className="md:hidden text-white font-bold mb-2">
-                    Status
-                  </h5>
-                  <span className={`py-1 px-2 ${data.color} rounded-lg`}>
-                    {data.status}
-                  </span>
-                </div>
-                <div>
-                  <h5 className="md:hidden text-white font-bold mb-2">
-                    Last Time Date
-                  </h5>
-                  <span>{data.date}</span>
-                </div>
-                <div>
-                  <h5 className="md:hidden text-white font-bold mb-2">
-                    Progress
-                  </h5>
+            <div
+              key={data.id}
+              className="grid grid-cols-1 md:grid-cols-5 gap-4 items-center mb-4 bg-secondary-900 p-4 rounded-xl"
+            >
+              <div>
+                <h5 className="md:hidden text-white font-bold mb-2">
+                  Specialization
+                </h5>
+                <span>{data.logo}</span>
+              </div>
+              <div>
+                <h5 className="md:hidden text-white font-bold mb-2">
+                  Description
+                </h5>
+                <p>{data.description}</p>
+              </div>
+              <div>
+                <h5 className="md:hidden text-white font-bold mb-2">Status</h5>
+                <span className={`py-1 px-2 ${data.color} rounded-lg`}>
+                  {data.status}
+                </span>
+              </div>
+              <div>
+                <h5 className="md:hidden text-white font-bold mb-2">
+                  Last Time Date
+                </h5>
+                <span>{data.date}</span>
+              </div>
+              <div>
+                <h5 className="md:hidden text-white font-bold mb-2">
+                  Progress
+                </h5>
 
-                  <div>
-                    <p>{data.progres}%</p>
-                  </div>
+                <div>
+                  <p>{data.progres}%</p>
                 </div>
               </div>
-            </>
+            </div>
           );
         })}
       </div>

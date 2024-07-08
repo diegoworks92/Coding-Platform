@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { logIn } from "../../store/slices/authSlice";
+import { useSelector, useDispatch } from "react-redux";
 import {
   RiMailLine,
   RiLockLine,
@@ -9,14 +11,32 @@ import {
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const lastLocation = useSelector((state) => state.auth.lastLocation);
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    // Comprueba si el nombre de usuario y la contraseña son correctos
+    if (username === "d" && password === "d") {
+      // Si son correctos, actualiza el estado de la autenticación
+      dispatch(logIn());
+      navigate(lastLocation || "/");
+    } else {
+      // Si no son correctos, muestra un mensaje de error
+      alert("Nombre de usuario o contraseña incorrectos");
+    }
+  };
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="bg-secondary-100 p-8 rounded-xl shadow-2xl w-auto lg:w-[450px]">
         <h1 className="text-3xl text-center uppercase font-bold tracking-[5px] text-white mb-8">
           Log <span className="text-primary">in</span>
         </h1>
-        <form className="mb-8">
+        <form onSubmit={handleSubmit} className="mb-8">
           <button className="flex items-center justify-center py-3 px-4 gap-4 bg-secondary-900 w-full rounded-full mb-8 text-gray-100">
             <img
               src="https://rotulosmatesanz.com/wp-content/uploads/2017/09/2000px-Google_G_Logo.svg_.png"
@@ -27,18 +47,22 @@ const Login = () => {
           <div className="relative mb-4">
             <RiMailLine className="absolute top-1/2 -translate-y-1/2 left-2 text-primary" />
             <input
-              type="email"
+              type="text"
               className="py-3 pl-8 pr-4 bg-secondary-900 w-full outline-none rounded-lg"
-              placeholder="Email
-              "
+              placeholder="Username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
             />
           </div>
+
           <div className="relative mb-8">
             <RiLockLine className="absolute top-1/2 -translate-y-1/2 left-2 text-primary" />
             <input
               type={showPassword ? "text" : "password"}
               className="py-3 px-8 bg-secondary-900 w-full outline-none rounded-lg"
               placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
             {showPassword ? (
               <RiEyeLine

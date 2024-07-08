@@ -1,12 +1,10 @@
-import CardTicket from "../../components/shared/CardTicket";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/slide.css";
 import MostRecentTickets from "../../components/shared/MostRecentTickets";
 import ExpertTeachers from "../../components/shared/ExpertTeachers";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { FaNodeJs } from "react-icons/fa";
 import { GoDatabase } from "react-icons/go";
 
 const Home = () => {
@@ -35,6 +33,7 @@ const Home = () => {
             />
           }
         />
+
         <ExpertTeachers
           image={"../../../public/images/Robert.webp"}
           title="Robert Johnson"
@@ -46,6 +45,7 @@ const Home = () => {
             />
           }
         />
+
         <ExpertTeachers
           image={"../../../public/images/Jhon.webp"}
           title="John Smith"
@@ -57,6 +57,7 @@ const Home = () => {
             />
           }
         />
+
         <ExpertTeachers
           image={"../../../public/images/Emily.webp"}
           title="Emily Davis"

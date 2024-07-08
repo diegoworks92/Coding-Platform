@@ -1,8 +1,24 @@
+import { useSelector, useDispatch } from "react-redux";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
+import { setLastLocation } from "../store/slices/authSlice";
+import { useEffect } from "react";
 
 const LayoutAdmin = () => {
+  const isLoggedIn = useSelector((state) => state.auth.loggedIn);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!isLoggedIn) {
+      dispatch(setLastLocation(location.pathname));
+      navigate("/login");
+    }
+  }, [isLoggedIn, navigate, dispatch, location]);
+
   return (
     <div className="min-h-screen grid grid-cols-1 xl:grid-cols-6">
       <Sidebar />
