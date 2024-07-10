@@ -20,12 +20,12 @@ const SidebarAccordion = () => {
       ico: <RiCustomerService2Line className="text-primary" />,
       children: <SocialMedia activeSubmenu={activeSubmenu === 1} id={1} />,
     },
-    {
+    /*    {
       id: 2,
       name: "Social media",
       ico: <RiEarthLine className="text-primary" />,
       children: <SocialMedia activeSubmenu={activeSubmenu === 2} id={2} />,
-    },
+    }, */
   ];
 
   return (

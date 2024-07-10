@@ -2,29 +2,26 @@ import { Link } from "react-router-dom";
 import { Disclosure, Transition } from "@headlessui/react";
 import { RiArrowRightLine, RiArrowRightSLine } from "react-icons/ri";
 
-const AdminTheme = ({ title, button }) => {
+const FrequesntlyAskedQuestions = ({ title, button }) => {
   const information = [
     {
       id: 1,
-      name: "What admin theme does?",
-      framework: "React",
+      name: "How can I create an account?",
     },
     {
       id: 2,
-      name: " How Extended Licese works?",
-      framework: "Laravel",
+      name: "How can I cancel my subscription?",
     },
     {
       id: 3,
-      name: " How to install on a local machine?",
-      framework: "VueJS",
+      name: "How do I change my account information?",
     },
     {
       id: 4,
-      name: "  How can I import Google fonts?",
-      framework: "Angular",
+      name: "What do I do if I forgot my username or password?",
     },
   ];
+
   return (
     <div className="bg-secondary-100 p-8 rounded-lg">
       {/*  Title card */}
@@ -44,9 +41,6 @@ const AdminTheme = ({ title, button }) => {
                   {" "}
                   <RiArrowRightSLine className="text-sm md:text-xl ui-open:rotate-90 ui-open:text-primary ui-open:transform transition-all" />
                   <p className="text-[13px] sm:text-lg"> {data.name}</p>
-                  <span className="hidden md:block bg-secondary-900 text-white text-sm py.0.5 px-2 rounded-lg">
-                    {data.framework}
-                  </span>
                 </Disclosure.Button>
                 <Transition
                   enter="transition duration-100 ease-out"
@@ -57,8 +51,10 @@ const AdminTheme = ({ title, button }) => {
                   leaveTo="transform scale-95 opacity-0"
                 >
                   <Disclosure.Panel className="text-gray-500 text-sm px-8 py-2">
-                    By Keenthemes to save tons and more to time money projects
-                    are listed and outstanding{" "}
+                    First, a disclaimer - the entire process of writing a blog
+                    post often takes more than a couple of hours, event if you
+                    can type eighty words as per minute and your writing skills
+                    are sharp.{" "}
                     <Link to="/" className="text-primary">
                       Check Out
                     </Link>
@@ -73,4 +69,4 @@ const AdminTheme = ({ title, button }) => {
   );
 };
 
-export default AdminTheme;
+export default FrequesntlyAskedQuestions;

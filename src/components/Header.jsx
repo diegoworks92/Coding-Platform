@@ -3,9 +3,9 @@ import {
   RiNotification3Line,
   RiSettings3Line,
   RiLogoutCircleRLine,
-  RiThumbUpLine,
   RiChat2Line,
 } from "react-icons/ri";
+import { RiNextjsFill } from "react-icons/ri";
 import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/slide.css";
@@ -13,7 +13,15 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const date = new Date().toLocaleDateString();
   return (
-    <header className="h-[7vh] md:h-[10vh] border-b border-secondary-100 p-8 flex items-center justify-end">
+    <header className="h-[7vh] md:h-[10vh] border-b border-secondary-100 p-8 flex items-center justify-between xl:justify-end">
+      <Link to="/" className="xl:hidden">
+        <img
+          src="logo.ico"
+          alt="company logo"
+          className="w-12 sm:w-16  md:w-20 md:h-16 object-cover hover:cursor-pointer"
+        />
+      </Link>
+
       <nav className="flex items-center gap-2">
         <Menu
           menuButton={
@@ -56,15 +64,13 @@ const Header = () => {
               to=""
               className="text-gray-300 flex flex-1 items-center gap-4 py-2 px-4 hover:bg-secondary-900 transition-colors rounded-lg"
             >
-              <RiThumbUpLine className="p-2 bg-blue-200 text-blue-700 box-content rounded-full" />
+              <RiNextjsFill className="p-2 bg-black box-content rounded-full" />
               <div className="text-sm flex flex-col">
                 <div className="flex items-center justify-between gap-4">
-                  <span>New like</span>
+                  <span>Tom DeLonge</span>
                   <span className="text-[8px]">{date}</span>
                 </div>
-                <p className="text-gray-500 text-xs">
-                  Tom DeLonge likes your post...
-                </p>
+                <p className="text-gray-500 text-xs">Course update...</p>
               </div>
             </Link>
           </MenuItem>
@@ -103,7 +109,7 @@ const Header = () => {
                 src="https://img.freepik.com/foto-gratis/negocio-joven-empresario-profesional-gafas-sonriendo-camara-brazo-cruzado-sobre-pecho_1258-26377.jpg"
                 className="w-6 h-6 object-cover rounded-full"
               />
-              <span>Diego Reyes</span>
+              <span>DiegoWorks</span>
               <RiArrowDownSLine />
             </MenuButton>
           }

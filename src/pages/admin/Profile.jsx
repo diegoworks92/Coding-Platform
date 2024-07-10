@@ -151,7 +151,7 @@ const Profile = () => {
           <div className="flex flex-col md:flex-row md:items-center gap-y-4 justify-between">
             <div>
               <h5 className="text-gray-100 text-xl mb-1">Email Address</h5>
-              <p className="text-gray-500 text-sm">support@company.com</p>
+              <p className="text-gray-500 text-sm">diegoreyes@diegoworks.com</p>
             </div>
             <div>
               <button className="w-full md:w-auto bg-secondary-900/50 py-3 px-4 rounded-lg hover:bg-secondary-900 hover:text-gray-100 transition-colors">
@@ -163,7 +163,7 @@ const Profile = () => {
           <div className="flex flex-col md:flex-row md:items-center gap-y-4 justify-between">
             <div>
               <h5 className="text-gray-100 text-xl mb-1">Password</h5>
-              <p className="text-gray-500 text-sm">***********</p>
+              <p className="text-gray-500 text-sm">*************</p>
             </div>
             <div>
               <button className="w-full md:w-auto bg-secondary-900/50 py-3 px-4 rounded-lg hover:bg-secondary-900 hover:text-gray-100 transition-colors">
@@ -280,11 +280,11 @@ const Profile = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/2762/2762451.png"
-                className="w-8 h-8 object-cover"
+                src="https://static.wikia.nocookie.net/youtubepedia/images/6/64/Discord.jpg/revision/latest?cb=20210824043945&path-prefix=es"
+                className="w-8 h-8 object-cover rounded-md"
               />
               <div className="flex flex-col gap-y-1">
-                <h5 className="text-gray-100">Slack</h5>
+                <h5 className="text-gray-100">Discord</h5>
                 <p className="text-gray-500 text-sm">
                   Integrate Projects Discussions
                 </p>
@@ -345,31 +345,17 @@ const Profile = () => {
               </div>
             </div>
           </div>
-          <hr className="my-8 border-gray-500/30 border-dashed" />
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-4">
-              <input type="checkbox" className="accent-primary" id="id3" />
-              <div className="flex flex-col gap-y-1">
-                <label htmlFor="id3" className="text-gray-100">
-                  Fee Collection
-                </label>
-                <p className="text-gray-500 text-sm">
-                  Receive a notification each time you collect a fee from sales.
-                </p>
-              </div>
-            </div>
-          </div>
+
           <hr className="my-8 border-gray-500/30 border-dashed" />
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-4">
               <input type="checkbox" className="accent-primary" id="id4" />
               <div className="flex flex-col gap-y-1">
                 <label htmlFor="id4" className="text-gray-100">
-                  Customer Payment Dispute
+                  Course updates
                 </label>
                 <p className="text-gray-500 text-sm">
-                  Receive a notification if a payment is disputed by a customer
-                  and for dispute purposes.
+                  Receive a notification every time a course has been updated.
                 </p>
               </div>
             </div>

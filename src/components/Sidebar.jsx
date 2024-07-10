@@ -1,6 +1,7 @@
 import { useState } from "react";
-
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { logOut } from "../store/slices/authSlice";
 import {
   RiBarChart2Line,
   RiMessage3Line,
@@ -12,8 +13,15 @@ import {
 } from "react-icons/ri";
 import SidebarButtons from "./sidebar/SidebarButtons";
 import SidebarAccordion from "./sidebar/SidebarAccordion";
+
 const Sidebar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const isLoggedIn = useSelector((state) => state.auth.loggedIn);
+  const dispatch = useDispatch();
+
+  const handleLogout = () => {
+    dispatch(logOut());
+  };
 
   return (
     <>
@@ -44,12 +52,12 @@ const Sidebar = () => {
               name="My Courses"
             />
             <SidebarButtons
-              route={"/my-progress"}
+              route={"/"}
               icon={<RiBarChart2Line className="text-primary" />}
               name="My Progress"
             />
             <SidebarButtons
-              route={"/notifications"}
+              route={"/"}
               icon={<RiMessage3Line className="text-primary" />}
               name="Notifications"
             />
@@ -57,12 +65,21 @@ const Sidebar = () => {
           </ul>
         </div>
         <nav>
-          <Link
-            to="/login"
-            className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors"
-          >
-            <RiLogoutCircleRLine className="text-primary" /> Log Out
-          </Link>
+          {isLoggedIn ? (
+            <button
+              onClick={handleLogout}
+              className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors"
+            >
+              <RiLogoutCircleRLine className="text-primary" /> Log Out
+            </button>
+          ) : (
+            <Link
+              to="/login"
+              className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors"
+            >
+              <RiLogoutCircleRLine className="text-primary" /> Log In
+            </Link>
+          )}
         </nav>
       </div>
       <button

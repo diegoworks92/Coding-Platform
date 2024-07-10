@@ -1,6 +1,13 @@
+const flowbite = require("flowbite-react/tailwind");
+
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    // ...
+    flowbite.content(),
+  ],
   theme: {
     fontFamily: {
       display: ["Ubuntu", "sans-serif", "Arial"],
@@ -15,6 +22,9 @@ export default {
       },
     },
   },
-
-  plugins: [require("@headlessui/tailwindcss")],
+  plugins: [
+    require("@headlessui/tailwindcss"),
+    // ...
+    flowbite.plugin(),
+  ],
 };

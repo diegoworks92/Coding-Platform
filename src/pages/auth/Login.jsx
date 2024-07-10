@@ -11,8 +11,8 @@ import {
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("DiegoWorks");
+  const [password, setPassword] = useState("diegoworks.com");
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const lastLocation = useSelector((state) => state.auth.lastLocation);
@@ -21,7 +21,7 @@ const Login = () => {
     event.preventDefault();
 
     // Comprueba si el nombre de usuario y la contraseña son correctos
-    if (username === "d" && password === "d") {
+    if (username === "DiegoWorks" && password === "diegoworks.com") {
       // Si son correctos, actualiza el estado de la autenticación
       dispatch(logIn());
       navigate(lastLocation || "/");
@@ -83,7 +83,7 @@ const Login = () => {
           <div>
             <button
               type="submit"
-              className="bg-primary text-black uppercase font-bold text-sm w-full py-3 px-4 rounded-lg " /* hover:text-gray-100 transition-colors */
+              className="bg-primary text-black uppercase font-bold text-sm w-full py-3 px-4 rounded-lg hover:bg-white transition-colors"
             >
               Enter
             </button>

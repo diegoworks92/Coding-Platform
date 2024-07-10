@@ -6,12 +6,10 @@ import store from "./store/store.js";
 import LayoutAuth from "./layouts/LayoutAuth";
 import LayoutAdmin from "./layouts/LayoutAdmin";
 
-// Pages auth
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import ForgetPassword from "./pages/auth/ForgetPassword";
 
-// Pages admin
 import Home from "./pages/admin/Home";
 import Profile from "./pages/admin/Profile";
 import Error404 from "./pages/Error404";

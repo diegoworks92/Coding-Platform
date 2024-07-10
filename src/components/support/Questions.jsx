@@ -1,9 +1,8 @@
 import { RiFilter2Fill, RiSearch2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import { Tab } from "@headlessui/react";
-import TicketsList from "../../components/support/TicketsList";
 import Faq from "../../components/support/Faq";
-import Overview from "../../components/support/Overview";
+
+import FrequesntlyAskedQuestions from "./FrequesntlyAskedQuestions";
 const Questions = () => {
   return (
     <div>
@@ -23,13 +22,11 @@ const Questions = () => {
           <button className="bg-secondary-100/50 hover:bg-secondary-100 flex items-center gap-2 py-2 px-4 rounded-lg hover:text-primary transition-colors">
             <RiFilter2Fill /> Filter
           </button>
-          <button className="bg-primary/90 hover:bg-primary text-black flex items-center gap-2 py-2 px-4 rounded-lg transition-colors">
-            Create
-          </button>
         </div>
       </div>
+
       {/* Cover Page */}
-      <div className="bg-secondary-100 p-8 rounded-tl-lg rounded-te-lg grid grid-cols-1 md:grid-cols-2 items-center">
+      <div className="bg-secondary-100 p-8 mb-8 rounded-lg rounded-te-lg grid grid-cols-1 md:grid-cols-2 items-center">
         <div className="p-8">
           <h1 className="text-3xl mb-8">How Can We Help You?</h1>
           <form>
@@ -38,7 +35,7 @@ const Questions = () => {
               <input
                 type="text"
                 className="bg-secondary-900 outline-none py-2 pr-4 pl-10 rounded-lg placeholder:text-gray-500 w-full"
-                placeholder="Search for anything"
+                placeholder="Search question"
               ></input>
             </div>
           </form>
@@ -46,45 +43,25 @@ const Questions = () => {
         {/* Image */}
         <div className="flex justify-center">
           <img
-            src="coverPage.svg"
+            src="../../../public/images/questions.svg"
             alt="cover page"
-            className="w-72 h-72 object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>
-      <Tab.Group>
-        <div className="bg-secondary-100 p-8 rounded-bl-lg rounded-br-lg">
-          <Tab.List className="flex flex-col md:flex-row md:items-center md:justify-between gap-x-2 gap-y-6 bg-secondary-900/50 py-3 px-4 rounded-lg">
-            <div className="flex flex-col md:flex-row md:items-center gap-2">
-              <Tab className="py-2 px-4 rounded-lg hover:bg-secondary-900 hover:text-gray-100 transition-color outline-none ui-selected:bg-secondary-900 ui-selected:text-gray-100">
-                Overview
-              </Tab>
-              <Tab className="py-2 px-4 rounded-lg hover:bg-secondary-900 hover:text-gray-100 transition-color outline-none ui-selected:bg-secondary-900 ui-selected:text-gray-100">
-                Tickets
-              </Tab>{" "}
-              <Tab className="py-2 px-4 rounded-lg hover:bg-secondary-900 hover:text-gray-100 transition-color outline-none ui-selected:bg-secondary-900 ui-selected:text-gray-100">
-                FAQ
-              </Tab>
-            </div>
-            <div className="flex justify-center">
-              <button className="bg-primary/90 hover:bg-primary text-black flex items-center gap-2 py-2 px-4 rounded-lg transition-colors">
-                Create Tickets
-              </button>
-            </div>
-          </Tab.List>
-        </div>
-        <Tab.Panels className="mt-8">
-          <Tab.Panel>
-            <Overview />
-          </Tab.Panel>
-          <Tab.Panel>
-            <TicketsList />
-          </Tab.Panel>
-          <Tab.Panel>
-            <Faq />
-          </Tab.Panel>
-        </Tab.Panels>
-      </Tab.Group>
+
+      <Faq />
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <FrequesntlyAskedQuestions
+          title="Accounts and Subscriptions"
+          button="Support"
+        />
+        <FrequesntlyAskedQuestions
+          title="Policies and Privacy"
+          button="All FAQ"
+        />
+      </div>
     </div>
   );
 };
