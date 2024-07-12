@@ -33,13 +33,13 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <button className="bg-secondary-100/50 hover:bg-secondary-100 flex items-center gap-2 py-2 px-4 rounded-lg hover:text-primary transition-colors">
+          <button className="bg-secondary-300/50 hover:bg-secondary-300 flex items-center gap-2 py-2 px-4 rounded-lg hover:text-primary transition-colors">
             <RiFilter2Fill /> Filter
           </button>
         </div>
       </div>
       {/* Contact */}
-      <div className="bg-secondary-100 rounded-te-lg grid grid-cols-1 md:grid-cols-2 items-center mb-10 p-6 rounded shadow-md ">
+      <div className="bg-secondary-300 rounded-te-lg grid grid-cols-1 md:grid-cols-2 items-center mb-10 p-6 rounded shadow-md ">
         <div className="text-lg">
           <p className="mb-1">
             <strong className="font-semibold">Address:</strong> 1234 Coding
@@ -63,13 +63,13 @@ const Contact = () => {
         {/* Image */}
         <div className="flex justify-center">
           <img
-            src="../../../public/images/contact.svg"
-            alt="cover page"
+            src="images/contact.svg"
+            alt="Contact"
             className="sm:w-80 sm:h-72 object-cover mt-8 md:mt-0"
           />
         </div>
       </div>
-      <div className="bg-secondary-100 p-8 rounded-lg grid grid-cols-1 xl:grid-cols-4 gap-8">
+      <div className="bg-secondary-300 p-8 rounded-lg grid grid-cols-1 xl:grid-cols-4 gap-8">
         {/* Section 1 */}
         <div className="md:col-span-3">
           <form>
@@ -220,7 +220,7 @@ const Contact = () => {
             <h1 className="text-2xl text-white mb-8">More channels</h1>
             <div>
               <div className="flex items-center gap-4 mb-8">
-                <RiDiscussLine className="text-5xl text-primary cursor-pointer" />
+                <RiDiscussLine className="text-4xl text-primary cursor-pointer" />
                 <div className="flex flex-col gap-1">
                   <h5 className="text-white">More to discuss?</h5>
                   <p className="text-xs">

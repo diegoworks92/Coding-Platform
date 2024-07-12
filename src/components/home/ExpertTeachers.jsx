@@ -5,14 +5,14 @@ const ExpertTeachers = (props) => {
   const { title, course, teacher, logo, image } = props;
 
   return (
-    <div className="bg-secondary-100 rounded-xl cursor-pointer">
+    <div className="bg-secondary-300 hover:bg-secondary-100 rounded-xl cursor-pointer group">
       {/* Number of tickets */}
       <div className="p-0 ">
-        <div className="w-full h-auto bg-black rounded-t-xl relative">
+        <div className="w-full h-auto bg-black rounded-t-xl relative overflow-hidden">
           <img
             src={image}
             alt="Teacher Image"
-            className="w-full h-auto bg-black rounded-t-xl "
+            className="w-full h-auto bg-black rounded-t-xl transform transition-all duration-500 group-hover:scale-110"
           />
         </div>
       </div>

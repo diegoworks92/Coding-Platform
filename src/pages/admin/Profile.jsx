@@ -22,7 +22,7 @@ const Profile = () => {
   return (
     <>
       {/* Profile  */}
-      <div className="bg-secondary-100 p-8 rounded-xl mb-8">
+      <div className="bg-secondary-300 p-8 rounded-xl mb-8">
         <h1 className="text-xl text-gray-100">Profile</h1>
         <hr className="my-8 border-gray-500/30" />
         <form>
@@ -38,7 +38,7 @@ const Profile = () => {
                 />
                 <label
                   htmlFor="avatar"
-                  className="absolute bg-secondary-100 p-2 rounded-full hover:cursor-pointer -top-2 left-24"
+                  className="absolute bg-secondary-300 p-2 rounded-full hover:cursor-pointer -top-2 left-24"
                 >
                   <RiEdit2Line />
                 </label>
@@ -144,7 +144,7 @@ const Profile = () => {
         </div>
       </div>
       {/* Change Password */}
-      <div className="bg-secondary-100 p-8 rounded-xl mb-8">
+      <div className="bg-secondary-300 p-8 rounded-xl mb-8">
         <h1 className="text-xl text-gray-100">Sign-in Method</h1>
         <hr className="my-8 border-gray-500/30" />
         <form className="mb-8">
@@ -192,7 +192,7 @@ const Profile = () => {
         </div>
       </div>
       {/* Connected accounts */}
-      <div className="bg-secondary-100 p-8 rounded-xl mb-8">
+      <div className="bg-secondary-300 p-8 rounded-xl mb-8">
         <h1 className="text-xl text-gray-100">Connected Accounts</h1>
         <hr className="my-8 border-gray-500/30" />
         <div className="flex flex-col md:flex-row gap-4 items-center bg-green-600/10 p-4 rounded-lg border border-dashed border-green-600 mb-8">
@@ -313,7 +313,7 @@ const Profile = () => {
         </form>
       </div>
       {/* Email Preferences */}
-      <div className="bg-secondary-100 p-8 rounded-xl mb-8">
+      <div className="bg-secondary-300 p-8 rounded-xl mb-8">
         <h1 className="text-xl text-gray-100">Email Preferences</h1>
         <hr className="my-8 border-gray-500/30" />
 
@@ -369,7 +369,7 @@ const Profile = () => {
         </div>
       </div>
       {/* Inactive account */}
-      <div className="bg-secondary-100 p-8 rounded-xl mb-8">
+      <div className="bg-secondary-300 p-8 rounded-xl mb-8">
         <h1 className="text-xl text-gray-100">Deactivate Accounts</h1>
         <hr className="my-8 border-gray-500/30" />
         <div className="flex  flex-col md:flex-row items-center gap-4 bg-yellow-600/10 p-4 rounded-lg border border-dashed border-yellow-600 mb-8">

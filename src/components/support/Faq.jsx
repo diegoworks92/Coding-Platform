@@ -3,7 +3,7 @@ import { RiArrowRightSLine } from "react-icons/ri";
 
 const Faq = () => {
   return (
-    <div className="bg-secondary-100 p-8 rounded-lg">
+    <div className="bg-secondary-300 p-8 rounded-lg">
       <div className="mb-10">
         <h1 className="text-2xl text-white mb-2">
           Frequesntly Asked Questions

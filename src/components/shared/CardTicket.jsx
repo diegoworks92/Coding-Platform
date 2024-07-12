@@ -30,7 +30,7 @@ const CardTicket = (props) => {
   }
 
   return (
-    <div className="bg-secondary-100 p-8 rounded-xl">
+    <div className="bg-secondary-300 p-8 rounded-xl">
       <div className="flex items-center justify-between mb-4">
         <div>
           <RiTicketLine
@@ -46,7 +46,7 @@ const CardTicket = (props) => {
             }
             align="end"
             transition
-            menuClassName="bg-secondary-100 p-4"
+            menuClassName="bg-secondary-300 p-4"
           >
             <MenuItem className="p-0 hover:bg-transparent">
               <Link

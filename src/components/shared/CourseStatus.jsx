@@ -72,9 +72,11 @@ const CourseStatus = () => {
   return (
     <>
       <div>
-        <h1 className="text-2xl text-white my-10">Course Status</h1>
+        <h1 className="font-bold text-3xl text-white mt-20 mb-10">
+          Course Status
+        </h1>
       </div>
-      <div className="bg-secondary-100 p-8 rounded-xl">
+      <div className="bg-secondary-300 p-8 rounded-xl">
         <div className="hidden md:grid grid-cols-1 md:grid-cols-5 gap-4 mb-10 p-4">
           <h5 className="font-bold">Specialization</h5>
           <h5 className="font-bold">Description</h5>

@@ -19,14 +19,14 @@ const Questions = () => {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <button className="bg-secondary-100/50 hover:bg-secondary-100 flex items-center gap-2 py-2 px-4 rounded-lg hover:text-primary transition-colors">
+          <button className="bg-secondary-300/50 hover:bg-secondary-300 flex items-center gap-2 py-2 px-4 rounded-lg hover:text-primary transition-colors">
             <RiFilter2Fill /> Filter
           </button>
         </div>
       </div>
 
       {/* Cover Page */}
-      <div className="bg-secondary-100 p-8 mb-8 rounded-lg rounded-te-lg grid grid-cols-1 md:grid-cols-2 items-center">
+      <div className="bg-secondary-300 p-8 mb-8 rounded-lg rounded-te-lg grid grid-cols-1 md:grid-cols-2 items-center">
         <div className="p-8">
           <h1 className="text-3xl mb-8">How Can We Help You?</h1>
           <form>
@@ -43,8 +43,8 @@ const Questions = () => {
         {/* Image */}
         <div className="flex justify-center">
           <img
-            src="../../../public/images/questions.svg"
-            alt="cover page"
+            src="images/questions.svg"
+            alt="Frequesntly Asked Questions"
             className="w-full h-full object-cover"
           />
         </div>

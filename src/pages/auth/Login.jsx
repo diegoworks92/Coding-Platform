@@ -32,7 +32,7 @@ const Login = () => {
   };
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
-      <div className="bg-secondary-100 p-8 rounded-xl shadow-2xl w-auto lg:w-[450px]">
+      <div className="bg-secondary-300 p-8 rounded-xl shadow-2xl w-auto lg:w-[450px]">
         <h1 className="text-3xl text-center uppercase font-bold tracking-[5px] text-white mb-8">
           Log <span className="text-primary">in</span>
         </h1>

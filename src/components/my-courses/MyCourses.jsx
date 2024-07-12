@@ -14,7 +14,7 @@ const MyCourses = () => {
   return (
     <div>
       <div className="flex items-center justify-between mb-10">
-        <h1 className="text-4xl text-white">My Courses</h1>
+        <h1 className="font-bold text-3xl text-white">My Courses</h1>
         <div className="flex items-center gap-2 text-3xl">
           <RiArrowLeftSLine className="hover:cursor-pointer hover:text-white transition-colors" />
           <RiArrowRightSLine className="hover:cursor-pointer hover:text-white transition-colors" />
@@ -23,6 +23,7 @@ const MyCourses = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {/* Card */}
         <Courses
+          img="1"
           number="Class 1 of 46"
           course="Architecture and Databases"
           logo={
@@ -32,6 +33,7 @@ const MyCourses = () => {
           }
         />
         <Courses
+          img="2"
           number="Class 10 of 28"
           course="Backend with Node.js"
           logo={
@@ -41,6 +43,7 @@ const MyCourses = () => {
           }
         />
         <Courses
+          img="3"
           number="Class 34 of 34"
           course="Frontend with React.js"
           logo={
@@ -50,6 +53,7 @@ const MyCourses = () => {
           }
         />
         <Courses
+          img="4"
           number="Class 34 of 43"
           course="JavaScript From Scratch"
           logo={

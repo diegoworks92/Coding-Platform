@@ -23,7 +23,7 @@ const FrequesntlyAskedQuestions = ({ title, button }) => {
   ];
 
   return (
-    <div className="bg-secondary-100 p-8 rounded-lg">
+    <div className="bg-secondary-300 p-8 rounded-lg">
       {/*  Title card */}
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-white text-xl md:text-2xl"> {title}</h1>

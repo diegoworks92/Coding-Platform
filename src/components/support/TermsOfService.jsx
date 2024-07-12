@@ -18,14 +18,14 @@ const TermsOfService = () => {
         </div>
       </div>
       {/* Cover Page */}
-      <div className="bg-secondary-100 p-8 rounded-lg rounded-te-lg grid grid-cols-1 md:grid-cols-2 items-center">
+      <div className="bg-secondary-300 p-8 rounded-lg rounded-te-lg grid grid-cols-1 md:grid-cols-2 items-center">
         <TOS />
 
         {/* Image */}
         <div className="flex justify-center">
           <img
-            src="../../../public/images/tos.svg"
-            alt="cover page"
+            src="images/tos.svg"
+            alt="Terms Of Service"
             className="w-full h-full object-cover"
           />
         </div>

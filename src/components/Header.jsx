@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const date = new Date().toLocaleDateString();
   return (
-    <header className="h-[7vh] md:h-[10vh] border-b border-secondary-100 p-8 flex items-center justify-between xl:justify-end">
+    <header className="h-[7vh] md:h-[10vh] border-b border-secondary-300 p-8 flex items-center justify-between xl:justify-end">
       <Link to="/" className="xl:hidden">
         <img
           src="logo.ico"
@@ -25,7 +25,7 @@ const Header = () => {
       <nav className="flex items-center gap-2">
         <Menu
           menuButton={
-            <MenuButton className="relative hover:bg-secondary-100 p-2 rounded-lg transition-colors">
+            <MenuButton className="relative hover:bg-secondary-300 p-2 rounded-lg transition-colors">
               {" "}
               <RiNotification3Line />
               <span className="absolute -top-0.5 -right-0 bg-primary py-0.5 px-[5px] box-content text-black rounded-full text-[8px] font-bold">
@@ -35,7 +35,7 @@ const Header = () => {
           }
           transition
           align="center"
-          menuClassName="bg-secondary-100 p-4"
+          menuClassName="bg-secondary-300 p-4"
         >
           <h1 className="text-gray-300 text-center font-medium">
             Notifications (3)
@@ -103,7 +103,7 @@ const Header = () => {
         </Menu>
         <Menu
           menuButton={
-            <MenuButton className="flex items-center gap-x-2 hover:bg-secondary-100 p-2 rounded-lg transition-colors">
+            <MenuButton className="flex items-center gap-x-2 hover:bg-secondary-300 p-2 rounded-lg transition-colors">
               {" "}
               <img
                 src="https://img.freepik.com/foto-gratis/negocio-joven-empresario-profesional-gafas-sonriendo-camara-brazo-cruzado-sobre-pecho_1258-26377.jpg"
@@ -115,7 +115,7 @@ const Header = () => {
           }
           align="end"
           transition
-          menuClassName="bg-secondary-100 p-4"
+          menuClassName="bg-secondary-300 p-4"
         >
           {" "}
           <MenuItem className="p-0 hover:bg-transparent">

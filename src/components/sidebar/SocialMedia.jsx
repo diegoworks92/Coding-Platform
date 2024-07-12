@@ -56,7 +56,7 @@ const SocialMedia = ({ activeSubmenu, id }) => {
               to={d.to}
               className={` ${
                 selected === d.id ? "before:bg-primary" : "before:bg-gray-500"
-              } py-2 px-4 border-l border-gray-500 ml-6 block relative before:w-3 before:h-3 before:absolute  before:rounded-full before:-left-[6.5px] before:top-1/2 before:-translate-y-1/2 before:border-4 before:border-secondary-100 hover:text-white`}
+              } py-2 px-4 border-l border-gray-500 ml-6 block relative before:w-3 before:h-3 before:absolute  before:rounded-full before:-left-[6.5px] before:top-1/2 before:-translate-y-1/2 before:border-4 before:border-secondary-300 hover:text-white`}
               onClick={() => click(d.id)}
             >
               {d.name}

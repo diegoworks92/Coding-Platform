@@ -5,12 +5,12 @@ import { logOut } from "../store/slices/authSlice";
 import {
   RiBarChart2Line,
   RiMessage3Line,
-  RiCalendarTodoLine,
   RiLogoutCircleRLine,
   RiMenu3Line,
   RiCloseLine,
   RiHome6Line,
 } from "react-icons/ri";
+import { BsPersonVideo2 } from "react-icons/bs";
 import SidebarButtons from "./sidebar/SidebarButtons";
 import SidebarAccordion from "./sidebar/SidebarAccordion";
 
@@ -26,7 +26,7 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className={`xl:h-[100vh] overflow-y-scroll fixed xl:static  w-[80%] md:w-[40%] lg:w-[30%] xl:w-auto h-full top-0 bg-secondary-100 p-4 flex flex-col justify-between z-50 ${
+        className={`xl:h-[100vh] overflow-y-scroll fixed xl:static  w-[80%] md:w-[40%] lg:w-[30%] xl:w-auto h-full top-0 bg-secondary-300 p-4 flex flex-col justify-between z-50 ${
           showMenu ? "left-0" : "-left-full"
         } transition-all`}
       >
@@ -48,7 +48,7 @@ const Sidebar = () => {
             />
             <SidebarButtons
               route={"/my-courses"}
-              icon={<RiCalendarTodoLine className="text-primary" />}
+              icon={<BsPersonVideo2 className="text-primary" />}
               name="My Courses"
             />
             <SidebarButtons

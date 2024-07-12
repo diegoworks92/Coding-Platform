@@ -31,7 +31,7 @@ const MostRecentTickets = () => {
       <div>
         <h1 className="text-2xl text-white my-10">Most recent tickets</h1>
       </div>
-      <div className="bg-secondary-100 p-8 rounded-xl">
+      <div className="bg-secondary-300 p-8 rounded-xl">
         <div className="hidden md:grid grid-cols-1 md:grid-cols-5 gap-4 mb-10 p-4">
           <h5>ID</h5>
           <h5>Description</h5>
@@ -69,13 +69,13 @@ const MostRecentTickets = () => {
                 <h5 className="md:hidden text-white font-bold mb-2">Actions</h5>
                 <Menu
                   menuButton={
-                    <MenuButton className="flex items-center gap-x-2 bg-secondary-100 p-2 rounded-lg transition-colors">
+                    <MenuButton className="flex items-center gap-x-2 bg-secondary-300 p-2 rounded-lg transition-colors">
                       Actions
                     </MenuButton>
                   }
                   align="end"
                   transition
-                  menuClassName="bg-secondary-100 p-4"
+                  menuClassName="bg-secondary-300 p-4"
                 >
                   <MenuItem className="p-0 hover:bg-transparent">
                     <Link
