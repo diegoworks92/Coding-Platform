@@ -2,7 +2,7 @@ const TOS = () => {
   const currentDate = new Date().toLocaleDateString();
 
   return (
-    <div className="p-6 rounded shadow-md text-white">
+    <div className="shadow-md text-white border-b-2 border-x p-6 rounded-lg border-secondary-500">
       <h1 className="text-2xl font-bold mb-4">Terms and Conditions of Use</h1>
       <p className="mb-2">
         <strong>Important Notice</strong>

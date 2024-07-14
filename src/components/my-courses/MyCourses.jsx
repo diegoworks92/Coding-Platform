@@ -1,35 +1,65 @@
-import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
-import "@szhsin/react-menu/dist/index.css";
-import "@szhsin/react-menu/dist/transitions/slide.css";
-
-import Courses from "../shared/Courses";
-
+import { useRef } from "react";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaNodeJs } from "react-icons/fa";
 import { GoDatabase } from "react-icons/go";
-import CourseStatus from "../shared/CourseStatus";
+import CourseStatus from "./CourseStatus";
+import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
+import Courses from "./Courses";
+
+const Carousel = ({ children }) => {
+  const carouselRef = useRef();
+
+  const next = () => {
+    if (
+      carouselRef.current.scrollLeft >=
+      carouselRef.current.scrollWidth - carouselRef.current.offsetWidth
+    ) {
+      carouselRef.current.scrollLeft = 0;
+    } else {
+      carouselRef.current.scrollLeft += carouselRef.current.offsetWidth;
+    }
+  };
+
+  const prev = () => {
+    if (carouselRef.current.scrollLeft <= 0) {
+      carouselRef.current.scrollLeft = carouselRef.current.scrollWidth;
+    } else {
+      carouselRef.current.scrollLeft -= carouselRef.current.offsetWidth;
+    }
+  };
+
+  return (
+    <div className="">
+      <button onClick={prev}>
+        <RiArrowLeftSLine className=" text-3xl hover:cursor-pointer hover:text-white transition-colors" />
+      </button>
+      <button onClick={next}>
+        <RiArrowRightSLine className=" text-3xl hover:cursor-pointer hover:text-white transition-colors" />
+      </button>
+      <div
+        ref={carouselRef}
+        className="flex overflow-x-scroll whitespace-nowrap gap-10"
+      >
+        {children}
+      </div>
+    </div>
+  );
+};
 
 const MyCourses = () => {
   return (
-    <div>
+    <div className="">
       <div className="flex items-center justify-between mb-10">
         <h1 className="font-bold text-3xl text-white">My Courses</h1>
-        <div className="flex items-center gap-2 text-3xl">
-          <RiArrowLeftSLine className="hover:cursor-pointer hover:text-white transition-colors" />
-          <RiArrowRightSLine className="hover:cursor-pointer hover:text-white transition-colors" />
-        </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        {/* Card */}
+      <Carousel>
         <Courses
           img="1"
           number="Class 1 of 46"
-          course="Architecture and Databases"
+          course="Databases with SQL"
           logo={
-            <GoDatabase
-              className={`text-xl p-2 box-content rounded-full col-span-1 bg-black`}
-            />
+            <GoDatabase className="text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black" />
           }
         />
         <Courses
@@ -37,9 +67,7 @@ const MyCourses = () => {
           number="Class 10 of 28"
           course="Backend with Node.js"
           logo={
-            <FaNodeJs
-              className={`text-xl p-2 box-content rounded-full col-span-1 bg-black`}
-            />
+            <FaNodeJs className="text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black" />
           }
         />
         <Courses
@@ -47,9 +75,7 @@ const MyCourses = () => {
           number="Class 34 of 34"
           course="Frontend with React.js"
           logo={
-            <FaReact
-              className={`text-xl p-2 box-content rounded-full col-span-1 bg-black`}
-            />
+            <FaReact className="text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black" />
           }
         />
         <Courses
@@ -57,12 +83,10 @@ const MyCourses = () => {
           number="Class 34 of 43"
           course="JavaScript From Scratch"
           logo={
-            <IoLogoJavascript
-              className={`text-xl p-2 box-content rounded-full col-span-1 bg-black`}
-            />
+            <IoLogoJavascript className="text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black" />
           }
         />
-      </div>
+      </Carousel>
       <CourseStatus />
     </div>
   );

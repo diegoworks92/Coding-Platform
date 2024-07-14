@@ -4,10 +4,8 @@ import {
   RiArrowLeftSLine,
   RiArrowRightSLine,
   RiDiscussLine,
-  RiFileTextLine,
   RiGithubLine,
   RiFilter2Fill,
-  RiTicketLine,
   RiSearch2Line,
 } from "react-icons/ri";
 import { FaInstagram, FaReact } from "react-icons/fa";
@@ -39,8 +37,8 @@ const Contact = () => {
         </div>
       </div>
       {/* Contact */}
-      <div className="bg-secondary-300 rounded-te-lg grid grid-cols-1 md:grid-cols-2 items-center mb-10 p-6 rounded shadow-md ">
-        <div className="text-lg">
+      <div className="bg-secondary-300 grid grid-cols-1 md:grid-cols-2 items-center mb-10 p-6 rounded-lg shadow-md ">
+        <div className="text-lg border-b-2 border-x p-6 rounded-lg border-secondary-500 shadow-md">
           <p className="mb-1">
             <strong className="font-semibold">Address:</strong> 1234 Coding
             Lane, Tech City, CodeState, 56789

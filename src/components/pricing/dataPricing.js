@@ -8,7 +8,7 @@ export const featuresBasic = [
     include: true,
   },
   {
-    feature: "English Academy",
+    feature: "Language School",
     include: false,
   },
   {
@@ -31,7 +31,7 @@ export const featuresAdvanced = [
     include: true,
   },
   {
-    feature: "Basic costumer support",
+    feature: "Language School",
     include: true,
   },
   {
@@ -54,7 +54,7 @@ export const featuresBusiness = [
     include: true,
   },
   {
-    feature: "English Academy",
+    feature: "Language School",
     include: true,
   },
   {

@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Outlet } from "react-router-dom";
-import Sidebar from "../components/Sidebar";
-import Header from "../components/Header";
+import Sidebar from "../components/sidebar/Sidebar";
+import Header from "../components/header/Header";
 import { setLastLocation } from "../store/slices/authSlice";
 import { useEffect } from "react";
 

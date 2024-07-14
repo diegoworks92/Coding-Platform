@@ -23,7 +23,7 @@ const Faq = () => {
             <Disclosure>
               <Disclosure.Button className="py-2 text-lg flex items-center gap-4">
                 <RiArrowRightSLine className="text-xl ui-open:rotate-90 ui-open:text-primary ui-open:transform transition-all" />{" "}
-                <p>What payment methods do you accept?</p>
+                <p>Accepted payment methods?</p>
               </Disclosure.Button>
               <Transition
                 enter="transition duration-100 ease-out"

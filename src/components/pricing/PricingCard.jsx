@@ -27,7 +27,9 @@ const PricingCard = ({
         )}
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-bold">{plan}</h2>
-          <span className="bg-slate-700 rounded-full px-2 px1">{period}</span>
+          <span className="bg-white text-black rounded-full px-2 px1">
+            {period}
+          </span>
         </div>
         <p className="text-gray-500">{description}</p>
         <div className="flex items-end">
@@ -40,7 +42,10 @@ const PricingCard = ({
         <h3 className="text-lg font-bold">Features</h3>
         <ul className="space-y-2">
           {features.map((feature, index) => (
-            <li key={index} className="flex items-center gap-2">
+            <li
+              key={index}
+              className="flex items-center gap-2 text-sm sm:text-base"
+            >
               {feature.include ? (
                 <RiCheckboxCircleFill className="text-purple-800" />
               ) : (

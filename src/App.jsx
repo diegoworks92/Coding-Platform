@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store/store.js";
 
@@ -10,7 +10,7 @@ import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import ForgetPassword from "./pages/auth/ForgetPassword";
 
-import Home from "./pages/admin/Home";
+import Home from "./components/home/Home.jsx";
 import Profile from "./pages/admin/Profile";
 import Error404 from "./pages/Error404";
 import MyCourses from "./components/my-courses/MyCourses";
@@ -23,7 +23,7 @@ import TermsOfService from "./components/support/TermsOfService";
 function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <Router>
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
@@ -43,7 +43,7 @@ function App() {
           </Route>
           <Route path="*" element={<Error404 />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </Provider>
   );
 }

@@ -14,11 +14,11 @@ const FrequesntlyAskedQuestions = ({ title, button }) => {
     },
     {
       id: 3,
-      name: "How do I change my account information?",
+      name: "How to modify account info?",
     },
     {
       id: 4,
-      name: "What do I do if I forgot my username or password?",
+      name: "Forgot password, what to do?",
     },
   ];
 

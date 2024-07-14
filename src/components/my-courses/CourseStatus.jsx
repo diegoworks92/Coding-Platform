@@ -20,7 +20,7 @@ const CourseStatus = () => {
       id: 1,
       logo: (
         <GoDatabase
-          className={`text-xl p-2 box-content rounded-full col-span-1 bg-white text-black`}
+          className={`text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black`}
         />
       ),
       description: "Architecture and Databases",
@@ -33,7 +33,7 @@ const CourseStatus = () => {
       id: 2,
       logo: (
         <FaNodeJs
-          className={`text-xl p-2 box-content rounded-full col-span-1 bg-white text-black`}
+          className={`text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black`}
         />
       ),
       description: "Backend with Node.js",
@@ -46,7 +46,7 @@ const CourseStatus = () => {
       id: 3,
       logo: (
         <FaReact
-          className={`text-xl p-2 box-content rounded-full col-span-1 bg-white text-black`}
+          className={`text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black`}
         />
       ),
       description: "Frontend with React.js",
@@ -59,7 +59,7 @@ const CourseStatus = () => {
       id: 4,
       logo: (
         <IoLogoJavascript
-          className={`text-xl p-2 box-content rounded-full col-span-1 bg-white text-black`}
+          className={`text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black`}
         />
       ),
       description: "JavaScript From Scratch",

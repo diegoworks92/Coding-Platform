@@ -1,5 +1,3 @@
-import React from "react";
-
 const HeaderPricing = ({ plan, onClickMonthly, onClickYearly }) => {
   return (
     <ul

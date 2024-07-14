@@ -26,8 +26,8 @@ const Questions = () => {
       </div>
 
       {/* Cover Page */}
-      <div className="bg-secondary-300 p-8 mb-8 rounded-lg rounded-te-lg grid grid-cols-1 md:grid-cols-2 items-center">
-        <div className="p-8">
+      <div className="bg-secondary-300 p-8 mb-8 rounded-lg grid grid-cols-1 md:grid-cols-2 items-center">
+        <div className="py-10 sm:p-8 sm:mx-4 xl:mx-10 2xl:mx-24">
           <h1 className="text-3xl mb-8">How Can We Help You?</h1>
           <form>
             <div className="relative">

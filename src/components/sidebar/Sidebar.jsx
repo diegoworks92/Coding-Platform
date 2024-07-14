@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { logOut } from "../store/slices/authSlice";
+import { logOut } from "../../store/slices/authSlice";
 import {
   RiBarChart2Line,
   RiMessage3Line,
@@ -11,8 +11,8 @@ import {
   RiHome6Line,
 } from "react-icons/ri";
 import { BsPersonVideo2 } from "react-icons/bs";
-import SidebarButtons from "./sidebar/SidebarButtons";
-import SidebarAccordion from "./sidebar/SidebarAccordion";
+import SidebarButtons from "./SidebarButtons";
+import SidebarAccordion from "./SidebarAccordion";
 
 const Sidebar = () => {
   const [showMenu, setShowMenu] = useState(false);
