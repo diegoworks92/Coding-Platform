@@ -66,6 +66,7 @@ const Login = () => {
             />
             {showPassword ? (
               <RiEyeLine
+                data-testid="toggle-password"
                 onClick={() => {
                   setShowPassword(!showPassword);
                 }}
@@ -73,6 +74,7 @@ const Login = () => {
               />
             ) : (
               <RiEyeOffLine
+                data-testid="toggle-password"
                 onClick={() => {
                   setShowPassword(!showPassword);
                 }}

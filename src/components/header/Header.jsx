@@ -10,8 +10,17 @@ import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/slide.css";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { logOut } from "../../store/slices/authSlice";
 const Header = () => {
   const date = new Date().toLocaleDateString();
+
+  const dispatch = useDispatch();
+
+  const handleLogout = () => {
+    dispatch(logOut());
+  };
+
   return (
     <header className="h-[7vh] md:h-[10vh] border-b border-secondary-300 p-8 flex items-center justify-between xl:justify-end">
       <Link to="/" className="xl:hidden">
@@ -145,12 +154,12 @@ const Header = () => {
             </Link>
           </MenuItem>
           <MenuItem className="p-0 hover:bg-transparent">
-            <Link
-              to="/login"
+            <button
+              onClick={handleLogout}
               className="rounded-lg transition-colors text-gray-300 hover:bg-secondary-900 flex items-center gap-x-4 py-2 px-6 flex-1"
             >
-              <RiLogoutCircleRLine /> Log out
-            </Link>
+              <RiLogoutCircleRLine className="text-primary" /> Log Out
+            </button>
           </MenuItem>
         </Menu>
       </nav>
