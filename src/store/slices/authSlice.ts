@@ -1,8 +1,18 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
+interface AuthState {
+  loggedIn: boolean;
+  lastLocation: string | null;
+}
+
+const initialState: AuthState = {
+  loggedIn: false,
+  lastLocation: null,
+};
 
 const authSlice = createSlice({
   name: "auth",
-  initialState: { loggedIn: false, lastLocation: null },
+  initialState,
   reducers: {
     logIn: (state) => {
       state.loggedIn = true;
@@ -10,7 +20,7 @@ const authSlice = createSlice({
     logOut: (state) => {
       state.loggedIn = false;
     },
-    setLastLocation: (state, action) => {
+    setLastLocation: (state, action: PayloadAction<string | null>) => {
       state.lastLocation = action.payload;
     },
   },

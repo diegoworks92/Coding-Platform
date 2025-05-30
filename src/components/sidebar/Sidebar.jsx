@@ -34,9 +34,9 @@ const Sidebar = () => {
           <div className="flex justify-center">
             <Link to="/">
               <img
-                src="logo.ico"
+                src="favicon.ico"
                 alt="company logo"
-                className="w-20 h-16 mb-10 mt-3 object-cover hover:cursor-pointer"
+                className="w-16 mb-10 mt-3 object-cover hover:cursor-pointer"
               />
             </Link>
           </div>

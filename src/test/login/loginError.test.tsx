@@ -1,4 +1,3 @@
-// tests/login/loginError.test.jsx
 import { renderWithProviders } from "./testUtils";
 import { screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
