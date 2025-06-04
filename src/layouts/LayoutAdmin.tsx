@@ -5,9 +5,10 @@ import Sidebar from "../components/sidebar/Sidebar";
 import Header from "../components/header/Header";
 import { setLastLocation } from "../store/slices/authSlice";
 import { useEffect } from "react";
+import { RootState } from "../store/store";
 
 const LayoutAdmin = () => {
-  const isLoggedIn = useSelector((state) => state.auth.loggedIn);
+  const isLoggedIn = useSelector((state: RootState) => state.auth.loggedIn);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
@@ -20,7 +21,7 @@ const LayoutAdmin = () => {
   }, [isLoggedIn, navigate, dispatch, location]);
 
   return (
-    <div className="min-h-screen grid grid-cols-1 xl:grid-cols-6">
+    <div className="min-h-screen grid grid-cols-1 xl:grid-cols-6 bg-secondary-900 text-white">
       <Sidebar />
       <div className="xl:col-span-5">
         {isLoggedIn && <Header />}

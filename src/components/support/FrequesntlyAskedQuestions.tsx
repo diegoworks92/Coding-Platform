@@ -2,7 +2,15 @@ import { Link } from "react-router-dom";
 import { Disclosure, Transition } from "@headlessui/react";
 import { RiArrowRightLine, RiArrowRightSLine } from "react-icons/ri";
 
-const FrequesntlyAskedQuestions = ({ title, button }) => {
+type FrequesntlyAskedQuestionsProps = {
+  title: string;
+  button: string;
+};
+
+const FrequesntlyAskedQuestions = ({
+  title,
+  button,
+}: FrequesntlyAskedQuestionsProps) => {
   const information = [
     {
       id: 1,

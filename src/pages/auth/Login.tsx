@@ -8,6 +8,7 @@ import {
   RiEyeLine,
   RiEyeOffLine,
 } from "react-icons/ri";
+import { RootState } from "store/store";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -15,9 +16,11 @@ const Login = () => {
   const [password, setPassword] = useState("diegoworks.com");
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const lastLocation = useSelector((state) => state.auth.lastLocation);
+  const lastLocation = useSelector(
+    (state: RootState) => state.auth.lastLocation
+  );
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     // Comprueba si el nombre de usuario y la contraseña son correctos
@@ -31,7 +34,7 @@ const Login = () => {
     }
   };
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
+    <div className="min-h-screen flex items-center justify-center p-4 text-white bg-secondary-900">
       <div className="bg-secondary-300 p-8 rounded-xl shadow-2xl w-auto lg:w-[450px]">
         <h1 className="text-3xl text-center uppercase font-bold tracking-[5px] text-white mb-8">
           Log <span className="text-primary">in</span>

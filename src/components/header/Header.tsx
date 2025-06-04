@@ -12,6 +12,7 @@ import "@szhsin/react-menu/dist/transitions/slide.css";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { logOut } from "../../store/slices/authSlice";
+import LogoHeader from "./LogoHeader";
 const Header = () => {
   const date = new Date().toLocaleDateString();
 
@@ -23,13 +24,7 @@ const Header = () => {
 
   return (
     <header className="h-[7vh] md:h-[10vh] border-b border-secondary-300 p-8 flex items-center justify-between xl:justify-end">
-      <Link to="/" className="xl:hidden">
-        <img
-          src="favicon.ico"
-          alt="company logo"
-          className="w-10 sm:w-16  md:w-20 md:h-16 object-cover hover:cursor-pointer"
-        />
-      </Link>
+      <LogoHeader />
 
       <nav className="flex items-center gap-2">
         <Menu

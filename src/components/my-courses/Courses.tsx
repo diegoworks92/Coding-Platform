@@ -2,11 +2,15 @@ import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/slide.css";
 import { FaPlay } from "react-icons/fa";
 
-const Courses = (props) => {
-  const { course, number, logo, img } = props;
-
+type CoursesProps = {
+  course: string;
+  number: string;
+  logo: JSX.Element;
+  img: string;
+};
+const Courses = ({ course, number, logo, img }: CoursesProps) => {
   return (
-    <div className=" bg-secondary-300 rounded-xl min-h-60 border-2 border-primary">
+    <div className=" bg-secondary-300 rounded-xl min-h-60 border-2 border-primary mb-10">
       <div
         className="w-full h-40 sm:h-64 rounded-t-xl relative border-b-2 border-primary"
         style={{

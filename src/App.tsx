@@ -1,16 +1,16 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
-import store from "./store/store.js";
+import store from "./store/store";
 
 // Layout
-import LayoutAuth from "./layouts/LayoutAuth";
+import LayoutAuth from "layouts/LayoutAuth";
 import LayoutAdmin from "./layouts/LayoutAdmin";
 
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import ForgetPassword from "./pages/auth/ForgetPassword";
 
-import Home from "./components/home/Home.jsx";
+import Home from "./components/home/Home";
 import Profile from "./pages/admin/Profile";
 import Error404 from "./pages/Error404";
 import MyCourses from "./components/my-courses/MyCourses";
@@ -33,13 +33,13 @@ function App() {
             {/* Support */}
             <Route path="terms-of-service" element={<TermsOfService />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="/frequently-asked-questions" element={<Questions />} />
+            <Route path="frequently-asked-questions" element={<Questions />} />
           </Route>
           <Route path="/" element={<LayoutAdmin />}>
             <Route path="profile" element={<Profile />} />
-            <Route path="/my-courses" element={<MyCourses />} />
-            <Route path="/my-progress" element={<MyProgress />} />
-            <Route path="/notifications" element={<Notifications />} />
+            <Route path="my-courses" element={<MyCourses />} />
+            <Route path="my-progress" element={<MyProgress />} />
+            <Route path="notifications" element={<Notifications />} />
           </Route>
           <Route path="*" element={<Error404 />} />
         </Routes>

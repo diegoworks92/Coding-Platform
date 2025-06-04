@@ -5,7 +5,7 @@ import {
 } from "./dataPricing";
 import PricingCard from "./PricingCard";
 
-const ListPricing = ({ plan }) => {
+const ListPricing = () => {
   return (
     <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <li>

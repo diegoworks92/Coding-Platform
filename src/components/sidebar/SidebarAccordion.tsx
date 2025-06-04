@@ -5,11 +5,12 @@ import {
 } from "react-icons/ri";
 import SocialMedia from "./SocialMedia";
 import { useState } from "react";
+import SidebarSupport from "./SidebarSupport";
 
 const SidebarAccordion = () => {
-  const [activeSubmenu, setActiveSubmenu] = useState(null);
+  const [activeSubmenu, setActiveSubmenu] = useState<null | number>(null);
 
-  const handleButton = (id) => {
+  const handleButton = (id: number) => {
     setActiveSubmenu(activeSubmenu === id ? null : id);
   };
 
@@ -18,14 +19,14 @@ const SidebarAccordion = () => {
       id: 1,
       name: "Support",
       ico: <RiCustomerService2Line className="text-primary" />,
-      children: <SocialMedia activeSubmenu={activeSubmenu === 1} id={1} />,
+      children: <SidebarSupport activeSubmenu={activeSubmenu === 1} id={1} />,
     },
-    /*    {
+    {
       id: 2,
       name: "Social media",
       ico: <RiEarthLine className="text-primary" />,
       children: <SocialMedia activeSubmenu={activeSubmenu === 2} id={2} />,
-    }, */
+    },
   ];
 
   return (

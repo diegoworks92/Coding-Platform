@@ -1,6 +1,16 @@
 import { PiStarFourFill } from "react-icons/pi";
 import { RiCheckboxCircleFill, RiCloseCircleFill } from "react-icons/ri";
 
+type PricingCardProps = {
+  plan: string;
+  price: number;
+  description: string;
+  features: { feature: string; include: boolean }[];
+  active?: boolean;
+  offer?: boolean;
+  period?: string;
+};
+
 const PricingCard = ({
   plan,
   price,
@@ -9,7 +19,7 @@ const PricingCard = ({
   active,
   offer,
   period,
-}) => {
+}: PricingCardProps) => {
   return (
     <div
       className={`relative border-2 border-secondary-300 hover:border-white bg-secondary-300  p-8 rounded-2xl hover:bg-secondary-100 hover:text-white transition-all duration-300 hover:-translate-y-5 ${

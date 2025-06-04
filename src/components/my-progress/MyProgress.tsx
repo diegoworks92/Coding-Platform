@@ -1,14 +1,14 @@
-import CardTicket from "../shared/CardTicket";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/slide.css";
+import CardTicket from "../shared/CardTicket";
 import MostRecentTickets from "../shared/MostRecentTickets";
 
-const Notifications = () => {
+const MyProgress = () => {
   return (
     <div>
       <div className="flex items-center justify-between mb-10">
-        <h1 className="text-4xl text-white">Notificaciones</h1>
+        <h1 className="text-4xl text-white">Mis Progresos</h1>
         <div className="flex items-center gap-2 text-3xl">
           <RiArrowLeftSLine className="hover:cursor-pointer hover:text-white transition-colors" />
           <RiArrowRightSLine className="hover:cursor-pointer hover:text-white transition-colors" />
@@ -42,4 +42,4 @@ const Notifications = () => {
   );
 };
 
-export default Notifications;
+export default MyProgress;

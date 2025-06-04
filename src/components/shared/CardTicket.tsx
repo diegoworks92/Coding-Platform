@@ -4,9 +4,13 @@ import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/slide.css";
 
-const CardTicket = (props) => {
-  const { ticket, totalTickets, text } = props;
+type CardTicketProps = {
+  ticket: "pending" | "inProcess" | "close" | "total";
+  totalTickets: string;
+  text: string;
+};
 
+const CardTicket = ({ ticket, totalTickets, text }: CardTicketProps) => {
   let status = "";
   let textColor = "";
 

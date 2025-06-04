@@ -62,7 +62,7 @@ const CourseStatus = () => {
           className={`text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black`}
         />
       ),
-      description: "JavaScript From Scratch",
+      description: "Basic JavaScript Course",
       status: "Completed",
       color: "bg-green-500/10 text-green-500",
       progres: "100",

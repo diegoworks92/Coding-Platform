@@ -10,12 +10,13 @@ import { PiPlugsConnectedFill } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import { Switch } from "@headlessui/react";
 import { useState } from "react";
+import { RootState } from "store/store";
 const Profile = () => {
   const [enabled, setEnabled] = useState(false);
   const [enabled2, setEnabled2] = useState(false);
   const [enabled3, setEnabled3] = useState(false);
 
-  const auth = useSelector((state) => state.auth);
+  const auth = useSelector((state: RootState) => state.auth);
   if (!auth.loggedIn) {
     return <Navigate to="/login" replace />;
   }

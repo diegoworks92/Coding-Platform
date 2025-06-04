@@ -1,9 +1,21 @@
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/slide.css";
 
-const ExpertTeachers = (props) => {
-  const { title, course, teacher, logo, image } = props;
+type ExpertTeachersProps = {
+  title: string;
+  course: string;
+  teacher: string;
+  logo: JSX.Element;
+  image: string;
+};
 
+const ExpertTeachers = ({
+  title,
+  course,
+  teacher,
+  logo,
+  image,
+}: ExpertTeachersProps) => {
   return (
     <div className="bg-secondary-300 hover:bg-secondary-100 rounded-xl cursor-pointer group">
       {/* Number of tickets */}

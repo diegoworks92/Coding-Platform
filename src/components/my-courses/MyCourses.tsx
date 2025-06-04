@@ -7,10 +7,15 @@ import CourseStatus from "./CourseStatus";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import Courses from "./Courses";
 
-const Carousel = ({ children }) => {
-  const carouselRef = useRef();
+type CarouselProps = {
+  children: React.ReactNode;
+};
+const Carousel = ({ children }: CarouselProps) => {
+  const carouselRef = useRef<HTMLDivElement>(null);
 
   const next = () => {
+    if (!carouselRef.current) return; // Verificación para evitar acceder si es null
+
     if (
       carouselRef.current.scrollLeft >=
       carouselRef.current.scrollWidth - carouselRef.current.offsetWidth
@@ -22,6 +27,8 @@ const Carousel = ({ children }) => {
   };
 
   const prev = () => {
+    if (!carouselRef.current) return; // Verificación antes de acceder a current
+
     if (carouselRef.current.scrollLeft <= 0) {
       carouselRef.current.scrollLeft = carouselRef.current.scrollWidth;
     } else {
@@ -30,7 +37,7 @@ const Carousel = ({ children }) => {
   };
 
   return (
-    <div className="">
+    <>
       <button onClick={prev}>
         <RiArrowLeftSLine className=" text-3xl hover:cursor-pointer hover:text-white transition-colors" />
       </button>
@@ -43,13 +50,13 @@ const Carousel = ({ children }) => {
       >
         {children}
       </div>
-    </div>
+    </>
   );
 };
 
 const MyCourses = () => {
   return (
-    <div className="">
+    <>
       <div className="flex items-center justify-between mb-10">
         <h1 className="font-bold text-3xl text-white">My Courses</h1>
       </div>
@@ -81,14 +88,14 @@ const MyCourses = () => {
         <Courses
           img="4"
           number="Class 34 of 43"
-          course="JavaScript From Scratch"
+          course="Basic JavaScript Course"
           logo={
             <IoLogoJavascript className="text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black" />
           }
         />
       </Carousel>
       <CourseStatus />
-    </div>
+    </>
   );
 };
 

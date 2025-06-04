@@ -1,4 +1,14 @@
-const HeaderPricing = ({ plan, onClickMonthly, onClickYearly }) => {
+type HeaderPricingProps = {
+  plan: "monthly" | "yearly";
+  onClickMonthly: () => void;
+  onClickYearly: () => void;
+};
+
+const HeaderPricing = ({
+  plan,
+  onClickMonthly,
+  onClickYearly,
+}: HeaderPricingProps) => {
   return (
     <ul
       className={`relative p-2 bg-secondary-100 text-white flex items-center rounded-full before:absolute before:top-8 before:w-1/2 before:h-[86%] before:-translate-y-1/2 before:bg-dark before:rounded-full transition-all duration-300 before:transition-all before:duration-300 ${

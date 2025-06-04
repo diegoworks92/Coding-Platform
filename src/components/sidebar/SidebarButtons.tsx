@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 
-const SidebarButtons = ({ icon, name, route }) => {
+type SidebarButtonsProps = {
+  icon: React.ReactNode;
+  name: string;
+  route: string;
+};
+
+const SidebarButtons = ({ icon, name, route }: SidebarButtonsProps) => {
   return (
     <li>
       <Link

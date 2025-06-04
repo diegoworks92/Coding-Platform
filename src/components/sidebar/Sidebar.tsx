@@ -13,10 +13,11 @@ import {
 import { BsPersonVideo2 } from "react-icons/bs";
 import SidebarButtons from "./SidebarButtons";
 import SidebarAccordion from "./SidebarAccordion";
+import { RootState } from "store/store";
 
 const Sidebar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const isLoggedIn = useSelector((state) => state.auth.loggedIn);
+  const isLoggedIn = useSelector((state: RootState) => state.auth.loggedIn);
   const dispatch = useDispatch();
 
   const handleLogout = () => {
