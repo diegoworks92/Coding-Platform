@@ -14,6 +14,7 @@ import { BsPersonVideo2 } from "react-icons/bs";
 import SidebarButtons from "./SidebarButtons";
 import SidebarAccordion from "./SidebarAccordion";
 import { RootState } from "store/store";
+import { useTranslation } from "react-i18next";
 
 const Sidebar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -23,6 +24,8 @@ const Sidebar = () => {
   const handleLogout = () => {
     dispatch(logOut());
   };
+
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -45,40 +48,44 @@ const Sidebar = () => {
             <SidebarButtons
               route={"/"}
               icon={<RiHome6Line className="text-primary" />}
-              name="Home"
+              name="sidebar.home"
             />
             <SidebarButtons
               route={"/my-courses"}
               icon={<BsPersonVideo2 className="text-primary" />}
-              name="My Courses"
+              name="sidebar.my_courses"
             />
             <SidebarButtons
               route={"/"}
               icon={<RiBarChart2Line className="text-primary" />}
-              name="My Progress"
+              name="sidebar.my_progress"
             />
             <SidebarButtons
               route={"/"}
               icon={<RiMessage3Line className="text-primary" />}
-              name="Notifications"
+              name="sidebar.notifications"
             />
+
             <SidebarAccordion />
           </ul>
         </div>
-        <nav>
+        <nav key={i18n.language}>
+          {/* Forza actualización cuando cambia el idioma */}
           {isLoggedIn ? (
             <button
               onClick={handleLogout}
               className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors"
             >
-              <RiLogoutCircleRLine className="text-primary" /> Log Out
+              <RiLogoutCircleRLine className="text-primary" />{" "}
+              {t("sidebar.log_out")}
             </button>
           ) : (
             <Link
               to="/login"
               className="flex items-center gap-4 py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors"
             >
-              <RiLogoutCircleRLine className="text-primary" /> Log In
+              <RiLogoutCircleRLine className="text-primary" />{" "}
+              {t("sidebar.log_in")}
             </Link>
           )}
         </nav>

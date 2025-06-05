@@ -6,9 +6,11 @@ import {
 import SocialMedia from "./SocialMedia";
 import { useState } from "react";
 import SidebarSupport from "./SidebarSupport";
+import { useTranslation } from "react-i18next";
 
 const SidebarAccordion = () => {
   const [activeSubmenu, setActiveSubmenu] = useState<null | number>(null);
+  const { t } = useTranslation(); // Añadir traducción
 
   const handleButton = (id: number) => {
     setActiveSubmenu(activeSubmenu === id ? null : id);
@@ -17,13 +19,13 @@ const SidebarAccordion = () => {
   const information = [
     {
       id: 1,
-      name: "Support",
+      name: "sidebar.support", // Cambiar el nombre a clave de traducción
       ico: <RiCustomerService2Line className="text-primary" />,
       children: <SidebarSupport activeSubmenu={activeSubmenu === 1} id={1} />,
     },
     {
       id: 2,
-      name: "Social media",
+      name: "sidebar.social_media", // Cambiar el nombre a clave de traducción
       ico: <RiEarthLine className="text-primary" />,
       children: <SocialMedia activeSubmenu={activeSubmenu === 2} id={2} />,
     },
@@ -39,7 +41,7 @@ const SidebarAccordion = () => {
               className="w-full flex items-center justify-between py-2 px-4 rounded-lg hover:bg-secondary-900 transition-colors"
             >
               <span className="flex items-center gap-4">
-                {data.ico} {data.name}
+                {data.ico} {t(data.name)} {/* Traducir el texto */}
               </span>
               <RiArrowRightSLine
                 className={`mt-1 ${

@@ -1,0 +1,28 @@
+{
+  "sidebar": {
+    "home": "Home",
+    "my_courses": "My Courses",
+    "my_progress": "My Progress",
+    "notifications": "Notifications",
+    "log_out": "Log Out",
+    "log_in": "Log In",
+    "support": "Support",
+    "social_media": "Social Media",
+    "contact": "Contact",
+    "tos": "TOS",
+    "faq": "FAQ"
+  },
+  "header": {
+    "language_button": "Language",
+    "settings": "Settings",
+    "log_out": "Log Out"
+  },
+  "notifications": {
+    "title": "Notifications (3)",
+    "message": "Your instructor left feedback...",
+    "course_update": "Course update...",
+    "new_comment": "New comment",
+    "travis_comment": "Travis Barker commented on...",
+    "all": "All notifications"
+  }
+}

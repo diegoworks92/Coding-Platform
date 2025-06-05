@@ -5,9 +5,10 @@ interface AuthState {
   lastLocation: string | null;
 }
 
+// ✅ Recuperar sesión guardada al iniciar la app
 const initialState: AuthState = {
-  loggedIn: false,
-  lastLocation: null,
+  loggedIn: localStorage.getItem("loggedIn") === "true",
+  lastLocation: localStorage.getItem("lastLocation") || null,
 };
 
 const authSlice = createSlice({
@@ -16,12 +17,19 @@ const authSlice = createSlice({
   reducers: {
     logIn: (state) => {
       state.loggedIn = true;
+      localStorage.setItem("loggedIn", "true"); // ✅ Guardar sesión
     },
     logOut: (state) => {
       state.loggedIn = false;
+      localStorage.removeItem("loggedIn"); // ✅ Eliminar sesión
     },
     setLastLocation: (state, action: PayloadAction<string | null>) => {
       state.lastLocation = action.payload;
+      if (action.payload) {
+        localStorage.setItem("lastLocation", action.payload); // ✅ Guardar última ubicación
+      } else {
+        localStorage.removeItem("lastLocation"); // ✅ Eliminar si es null
+      }
     },
   },
 });

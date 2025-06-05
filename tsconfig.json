@@ -18,7 +18,8 @@
     "paths": {
       "@components/*": ["components/*"],
       "@utils/*": ["utils/*"]
-    }
+    },
+    "types": ["vite/client"] // ✅ Añadir esto
   },
   "include": ["src"]
 }

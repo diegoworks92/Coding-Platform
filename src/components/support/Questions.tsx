@@ -1,6 +1,6 @@
 import { RiFilter2Fill, RiSearch2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import Faq from "../../components/support/Faq";
+import Faq from "./Faq";
 
 import FrequesntlyAskedQuestions from "./FrequesntlyAskedQuestions";
 const Questions = () => {
