@@ -1,68 +1,23 @@
 export const featuresBasic = [
-  {
-    feature: "Professional and updated content",
-    include: true,
-  },
-  {
-    feature: "Digital certificates",
-    include: true,
-  },
-  {
-    feature: "Language School",
-    include: false,
-  },
-  {
-    feature: "Download content in the app",
-    include: false,
-  },
-  {
-    feature: "Customized Lessons",
-    include: false,
-  },
+  { feature: "professional_content", include: true },
+  { feature: "digital_certificates", include: true },
+  { feature: "language_school", include: false },
+  { feature: "download_content", include: false },
+  { feature: "customized_lessons", include: false },
 ];
 
 export const featuresAdvanced = [
-  {
-    feature: "Professional and updated content",
-    include: true,
-  },
-  {
-    feature: "Digital certificates",
-    include: true,
-  },
-  {
-    feature: "Language School",
-    include: true,
-  },
-  {
-    feature: "Download content in the app",
-    include: true,
-  },
-  {
-    feature: "Customized Lessons",
-    include: true,
-  },
+  { feature: "professional_content", include: true },
+  { feature: "digital_certificates", include: true },
+  { feature: "language_school", include: true },
+  { feature: "download_content", include: true },
+  { feature: "customized_lessons", include: true },
 ];
 
 export const featuresBusiness = [
-  {
-    feature: "Professional and updated content",
-    include: true,
-  },
-  {
-    feature: "Digital certificates",
-    include: true,
-  },
-  {
-    feature: "Language School",
-    include: true,
-  },
-  {
-    feature: "Download content in the app",
-    include: true,
-  },
-  {
-    feature: "Customized Lessons",
-    include: true,
-  },
+  { feature: "professional_content", include: true },
+  { feature: "digital_certificates", include: true },
+  { feature: "language_school", include: true },
+  { feature: "download_content", include: true },
+  { feature: "customized_lessons", include: true },
 ];

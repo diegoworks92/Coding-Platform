@@ -1,12 +1,10 @@
 import { useRef } from "react";
-import { FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
-import { FaNodeJs } from "react-icons/fa";
-import { GoDatabase } from "react-icons/go";
-import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import Courses from "./Courses";
 import { useTranslation } from "react-i18next";
-import LatestCourses from "./LatestCourses";
+import { FaJava, FaPhp } from "react-icons/fa";
+import { TbBrandKotlin } from "react-icons/tb";
+import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
+import { SiCplusplus } from "react-icons/si";
 
 type CarouselProps = {
   children: React.ReactNode;
@@ -55,50 +53,44 @@ const Carousel = ({ children }: CarouselProps) => {
   );
 };
 
-const MyCourses = () => {
+const LatestCourses = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="flex items-center justify-between mb-10">
-        <h1 className="font-bold text-3xl text-white">{t("my_courses")}</h1>
+      <div className="flex items-center justify-between my-10">
+        <h1 className="font-bold text-3xl text-white">{t("latest_courses")}</h1>
       </div>
       <Carousel>
         <Courses
           img="1"
-          number="Class 1 of 46"
-          courseKey="databases_sql"
+          courseKey="c_plus_plus"
           logo={
-            <GoDatabase className="text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black" />
+            <SiCplusplus className="text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black" />
           }
         />
         <Courses
           img="2"
-          number="Class 10 of 28"
-          courseKey="backend_nodejs"
+          courseKey="java_dev"
           logo={
-            <FaNodeJs className="text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black" />
+            <FaJava className="text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black" />
           }
         />
         <Courses
           img="3"
-          number="Class 36 of 36"
-          courseKey="frontend_react"
+          courseKey="php_web"
           logo={
-            <FaReact className="text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black" />
+            <FaPhp className="text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black" />
           }
         />
         <Courses
           img="4"
-          number="Class 42 of 42"
-          courseKey="basic_js"
+          courseKey="kotlin_android"
           logo={
-            <IoLogoJavascript className="text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black" />
+            <TbBrandKotlin className="text-xl p-2 box-content rounded-full col-span-1 bg-primary text-black" />
           }
         />
       </Carousel>
-      <LatestCourses />
     </>
   );
 };
-
-export default MyCourses;
+export default LatestCourses;

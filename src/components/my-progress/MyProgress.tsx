@@ -1,44 +1,24 @@
-import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import "@szhsin/react-menu/dist/index.css";
 import "@szhsin/react-menu/dist/transitions/slide.css";
-import CardTicket from "../shared/CardTicket";
-import MostRecentTickets from "../shared/MostRecentTickets";
+import CourseStatus from "@components/my-progress/CourseStatus";
+import ChartBarMixed from "./ChartBarMixed";
+import ChartLineDots from "./ChartLineDots";
+import { ChartPieDonutText } from "./ChartPieDonutText";
+import { t } from "i18next";
 
 const MyProgress = () => {
   return (
-    <div>
-      <div className="flex items-center justify-between mb-10">
-        <h1 className="text-4xl text-white">Mis Progresos</h1>
-        <div className="flex items-center gap-2 text-3xl">
-          <RiArrowLeftSLine className="hover:cursor-pointer hover:text-white transition-colors" />
-          <RiArrowRightSLine className="hover:cursor-pointer hover:text-white transition-colors" />
-        </div>
+    <>
+      <CourseStatus />
+      <h1 className="font-bold text-3xl text-white mt-20">
+        {t("progress_status.title")}
+      </h1>
+      <div className="flex justify-between flex-col xl:flex-row">
+        <ChartBarMixed />
+        <ChartLineDots />
+        <ChartPieDonutText />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        {/* Card */}
-        <CardTicket
-          ticket="total"
-          totalTickets="145,000"
-          text="Total tickets"
-        />
-        <CardTicket
-          ticket="pending"
-          totalTickets="5,000"
-          text="Pending tickets"
-        />
-        <CardTicket
-          ticket="inProcess"
-          totalTickets="130,000"
-          text="Tickets in process"
-        />
-        <CardTicket
-          ticket="close"
-          totalTickets="10,000"
-          text="Closed tickets"
-        />
-      </div>
-      <MostRecentTickets />
-    </div>
+    </>
   );
 };
 

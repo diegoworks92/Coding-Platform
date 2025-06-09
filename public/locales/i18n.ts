@@ -14,7 +14,7 @@ i18n
     fallbackLng: "en",
     debug: import.meta.env.DEV,
     interpolation: { escapeValue: false },
-    backend: { loadPath: "/src/locales/{{lng}}.json" },
+    backend: { loadPath: "/locales/{{lng}}.json" },
   });
 
 export default i18n;

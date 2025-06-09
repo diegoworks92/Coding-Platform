@@ -40,7 +40,7 @@ const Header = () => {
                 className="w-6 h-6 object-cover rounded-full"
               />
               <span>DiegoWorks</span>
-              <span className="pt-2">
+              <span className="pt-2 hidden xl:inline-block">
                 <RiArrowDownSLine />
               </span>
             </MenuButton>

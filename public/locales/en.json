@@ -1,0 +1,158 @@
+{
+  "sidebar": {
+    "home": "Home",
+    "my_courses": "My Courses",
+    "my_progress": "My Progress",
+    "notifications": "Notifications",
+    "log_out": "Log Out",
+    "log_in": "Log In",
+    "support": "Support",
+    "social_media": "Social Media",
+    "contact": "Contact",
+    "tos": "TOS",
+    "faq": "FAQ"
+  },
+  "header": {
+    "language_button": "Language",
+    "settings": "Settings",
+    "log_out": "Log Out"
+  },
+  "notifications": {
+    "title": "Notifications (3)",
+    "message": "Your instructor has graded...",
+    "course_update": "Course update...",
+    "new_comment": "New comment",
+    "travis_comment": "Travis Barker commented on...",
+    "all": "All notifications"
+  },
+  "carousel": {
+    "discovery_title": "Thrilling Discovery",
+    "discovery_text": "Skills for today and tomorrow. Embark on your learning journey with us.",
+    "special_title": "Specially Designed For You",
+    "special_text": "Choose from the various plans we provide, both individual and for businesses.",
+    "individual_plan": "Individual Plan",
+    "business_plan": "Business Plan",
+    "image_alt": "Carousel image"
+  },
+  "home": {
+    "expert_teachers": "Our expert teachers"
+  },
+  "teachers": {
+    "sarah": {
+      "name": "Sarah Miller",
+      "role": "Software Engineer",
+      "course": "Frontend with React.js"
+    },
+    "robert": {
+      "name": "Robert Johnson",
+      "role": "Web Applications Developer",
+      "course": "Basic JavaScript Course"
+    },
+    "john": {
+      "name": "John Smith",
+      "role": "Backend Engineer",
+      "course": "Backend with Node.js"
+    },
+    "emily": {
+      "name": "Emily Davis",
+      "role": "Database Professor",
+      "course": "Architecture and Databases"
+    }
+  },
+
+  "pricing": {
+    "header": {
+      "personal": "Personal",
+      "company": "Company"
+    },
+
+    "title": "Choose the ideal plan for you",
+    "basic": "Basic",
+    "expert": "Expert",
+    "expert_duo": "Expert Duo",
+    "period": {
+      "month": "Month",
+      "year": "Annual"
+    },
+    "description": {
+      "basic": "Best for personal use",
+      "expert": "Best for professionals",
+      "expert_duo": "For 2 people"
+    },
+    "features": "Features",
+    "per_month": "/ Per month",
+    "best_offer": "BEST OFFER",
+    "start_plan": "Start with the {{plan}}",
+    "features_list": {
+      "professional_content": "Professional and updated content",
+      "digital_certificates": "Digital certificates",
+      "language_school": "Language School",
+      "download_content": "Download content in the app",
+      "customized_lessons": "Customized Lessons"
+    }
+  },
+  "courses": {
+    "databases_sql": "Databases with SQL",
+    "backend_nodejs": "Backend with Node.js",
+    "frontend_react": "Frontend with React.js",
+    "basic_js": "Basic JavaScript Course",
+    "c_plus_plus": "C++ Programming",
+    "java_dev": "Java Development",
+    "php_web": "PHP for Web",
+    "kotlin_android": "Kotlin for Android"
+  },
+  "my_courses": "My Courses",
+  "course_status": {
+    "title": "Course Status",
+    "specialization": "Specialization",
+    "description": "Description",
+    "status": "Status",
+    "last_time_date": "Last Time Date",
+    "progress": "Progress",
+    "statuses": {
+      "not_started": "Not started",
+      "started": "Started",
+      "completed": "Completed"
+    }
+  },
+  "latest_courses": "Latest courses released",
+  "progress_status": {
+    "title": "Course Progress Bar Chart",
+    "description": "Recent Course Completion Rates",
+    "courses": {
+      "databases_sql": "Bases of Data with SQL",
+      "backend_nodejs": "Backend with Node.js",
+      "frontend_react": "Frontend with React",
+      "basic_js": "Basic JavaScript"
+    },
+    "footer": {
+      "line1": "Trending upwards this month",
+      "line2": "Recent analytics reveal significant improvements across courses.",
+      "line3": "Individual course performance exceeds expectations.",
+      "line4": "Detailed insights empower strategic adjustments."
+    },
+    "hours": "hours"
+  },
+  "progress_timeline": {
+    "title": "Course Progress Timeline",
+    "description": "Extended monthly average progress",
+    "average_progress": "Average Progress",
+    "units": "units",
+    "footer": {
+      "line1": "Trending up by 5.2% this month",
+      "line2": "Average course progress over an extended timeline"
+    }
+  },
+  "progress_donut": {
+    "title": "Course Duration",
+    "description": "Total duration in hours",
+    "courses": {
+      "databases_sql": "Databases with SQL",
+      "backend_nodejs": "Backend with Node.js",
+      "frontend_react": "Frontend with React.js",
+      "basic_js": "Basic JavaScript Course"
+    },
+    "total_hours": "total hours",
+    "hours": "hours"
+  }
+}

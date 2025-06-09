@@ -14,7 +14,7 @@ const LanguageSwitcher = () => {
           </span>
 
           <span>{t("header.language_button")}</span>
-          <span className="pt-2">
+          <span className="pt-2 hidden xl:inline-block">
             <RiArrowDownSLine />
           </span>
         </MenuButton>
@@ -23,7 +23,6 @@ const LanguageSwitcher = () => {
       transition
       menuClassName="bg-secondary-300 p-4"
     >
-      {/*       <hr className="my-4 border-gray-500" /> */}
       <MenuItem className="p-0 hover:bg-transparent flex flex-col">
         <LanguageButton language="en" name="English" />
         <LanguageButton language="es" name="Español" />

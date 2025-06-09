@@ -56,7 +56,7 @@ const Sidebar = () => {
               name="sidebar.my_courses"
             />
             <SidebarButtons
-              route={"/"}
+              route={"/my-progress"}
               icon={<RiBarChart2Line className="text-primary" />}
               name="sidebar.my_progress"
             />

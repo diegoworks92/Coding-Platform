@@ -1,0 +1,157 @@
+{
+  "sidebar": {
+    "home": "Inicio",
+    "my_courses": "Mis Cursos",
+    "my_progress": "Mi Progreso",
+    "notifications": "Notificaciones",
+    "log_out": "Cerrar sesión",
+    "log_in": "Iniciar sesión",
+    "support": "Soporte",
+    "social_media": "Redes Sociales",
+    "contact": "Contacto",
+    "tos": "Condiciones",
+    "faq": "FAQ"
+  },
+  "header": {
+    "language_button": "Idioma",
+    "settings": "Configuración",
+    "log_out": "Cerrar sesión"
+  },
+  "notifications": {
+    "title": "Notificaciones (3)",
+    "message": "Tu instructor ha evaluado...",
+    "course_update": "Actualización del curso...",
+    "new_comment": "Nuevo comentario",
+    "travis_comment": "Travis Barker ha comentado en...",
+    "all": "Todas las notificaciones"
+  },
+  "carousel": {
+    "discovery_title": "Descubrimiento emocionante",
+    "discovery_text": "Habilidades para hoy y mañana. Embárcate en tu viaje de aprendizaje con nosotros.",
+    "special_title": "Diseñado especialmente para ti",
+    "special_text": "Elige entre los diversos planes que ofrecemos, tanto individuales como para empresas.",
+    "individual_plan": "Plan Individual",
+    "business_plan": "Plan Empresarial",
+    "image_alt": "Imagen del carrusel"
+  },
+  "home": {
+    "expert_teachers": "Nuestros profesores expertos"
+  },
+  "teachers": {
+    "sarah": {
+      "name": "Sarah Miller",
+      "role": "Ingeniera de Software",
+      "course": "Frontend con React.js"
+    },
+    "robert": {
+      "name": "Robert Johnson",
+      "role": "Desarrollador de Aplicaciones Web",
+      "course": "Curso Básico de JavaScript"
+    },
+    "john": {
+      "name": "John Smith",
+      "role": "Ingeniero Backend",
+      "course": "Backend con Node.js"
+    },
+    "emily": {
+      "name": "Emily Davis",
+      "role": "Profesora de Bases de Datos",
+      "course": "Arquitectura y Bases de Datos"
+    }
+  },
+  "pricing": {
+    "header": {
+      "personal": "Personal",
+      "company": "Empresa"
+    },
+    "title": "Elige el plan ideal para ti",
+    "basic": "Básico",
+    "expert": "Experto",
+    "expert_duo": "Experto Duo",
+    "period": {
+      "month": "Mes",
+      "year": "Anual"
+    },
+    "description": {
+      "basic": "Ideal para uso personal",
+      "expert": "Ideal para profesionales",
+      "expert_duo": "Para 2 personas"
+    },
+    "features": "Características",
+    "per_month": "/ Por mes",
+    "best_offer": "MEJOR OFERTA",
+    "start_plan": "Comenzar con el {{plan}}",
+    "features_list": {
+      "professional_content": "Contenido profesional y actualizado",
+      "digital_certificates": "Certificados digitales",
+      "language_school": "Escuela de idiomas",
+      "download_content": "Descargar contenido en la app",
+      "customized_lessons": "Lecciones personalizadas"
+    }
+  },
+  "courses": {
+    "databases_sql": "Bases de datos con SQL",
+    "backend_nodejs": "Backend con Node.js",
+    "frontend_react": "Frontend con React.js",
+    "basic_js": "Curso básico de JavaScript",
+    "c_plus_plus": "Programación en C++",
+    "java_dev": "Desarrollo en Java",
+    "php_web": "PHP para Web",
+    "kotlin_android": "Kotlin para Android"
+  },
+  "my_courses": "Mis cursos",
+  "course_status": {
+    "title": "Estado del curso",
+    "specialization": "Especialización",
+    "description": "Descripción",
+    "status": "Estado",
+    "last_time_date": "Última fecha",
+    "progress": "Progreso",
+    "statuses": {
+      "not_started": "No iniciado",
+      "started": "Iniciado",
+      "completed": "Completado"
+    }
+  },
+  "latest_courses": "Últimos cursos lanzados",
+
+  "progress_status": {
+    "title": "Gráfico de barras de progreso de cursos",
+    "description": "Tasas recientes de finalización de cursos",
+    "courses": {
+      "databases_sql": "Bases de datos con SQL",
+      "backend_nodejs": "Backend con Node.js",
+      "frontend_react": "Frontend con React",
+      "basic_js": "JavaScript básico"
+    },
+    "footer": {
+      "line1": "Tendencia en alza este mes",
+      "line2": "Los análisis recientes revelan mejoras significativas en los cursos.",
+      "line3": "El rendimiento individual del curso supera las expectativas.",
+      "line4": "Información detallada que potencia ajustes estratégicos."
+    },
+    "hours": "horas"
+  },
+  "progress_timeline": {
+    "title": "Cronología del progreso del curso",
+    "description": "Progreso promedio mensual extendido",
+    "average_progress": "Progreso Promedio",
+    "units": "unidades",
+    "footer": {
+      "line1": "Tendencia al alza este mes",
+      "line2": "Progreso promedio de curso a lo largo de un periodo extendido"
+    }
+  },
+  "progress_donut": {
+    "title": "Duración del curso",
+    "description": "Duración total en horas",
+    "courses": {
+      "databases_sql": "Bases de datos con SQL",
+      "backend_nodejs": "Backend con Node.js",
+      "frontend_react": "Frontend con React.js",
+      "basic_js": "Curso básico de JavaScript"
+    },
+    "total_hours": "horas totales",
+    "hours": "horas"
+  }
+}

@@ -21,7 +21,7 @@ const LayoutAdmin = () => {
   }, [isLoggedIn, navigate, dispatch, location]);
 
   return (
-    <div className="min-h-screen grid grid-cols-1 xl:grid-cols-6 bg-secondary-900 text-white">
+    <div className="min-h-screen grid grid-cols-1 xl:grid-cols-6 bg-secondary-900 text-white notranslate">
       <Sidebar />
       <div className="xl:col-span-5">
         {isLoggedIn && <Header />}

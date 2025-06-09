@@ -1,0 +1,156 @@
+{
+  "sidebar": {
+    "home": "Inici",
+    "my_courses": "Els meus cursos",
+    "my_progress": "El meu progrés",
+    "notifications": "Notificacions",
+    "log_out": "Tancar sessió",
+    "log_in": "Iniciar sessió",
+    "support": "Suport",
+    "social_media": "Xarxes Socials",
+    "contact": "Contacte",
+    "tos": "Condicions",
+    "faq": "FAQ"
+  },
+  "header": {
+    "language_button": "Idioma",
+    "settings": "Configuració",
+    "log_out": "Tancar sessió"
+  },
+  "notifications": {
+    "title": "Notificacions (3)",
+    "message": "El teu instructor ha avaluat...",
+    "course_update": "Actualització del curs...",
+    "new_comment": "Nou comentari",
+    "travis_comment": "Travis Barker ha comentat a...",
+    "all": "Totes les notificacions"
+  },
+  "carousel": {
+    "discovery_title": "Descobriment emocionant",
+    "discovery_text": "Habilitats per avui i demà. Inicia el teu viatge d'aprenentatge amb nosaltres.",
+    "special_title": "Dissenyat especialment per a tu",
+    "special_text": "Tria entre els diversos plans que oferim, tant individuals com per a empreses.",
+    "individual_plan": "Pla Individual",
+    "business_plan": "Pla Empresarial",
+    "image_alt": "Imatge del carrusel"
+  },
+  "home": {
+    "expert_teachers": "Els nostres professors experts"
+  },
+  "teachers": {
+    "sarah": {
+      "name": "Sarah Miller",
+      "role": "Enginyera de Software",
+      "course": "Frontend amb React.js"
+    },
+    "robert": {
+      "name": "Robert Johnson",
+      "role": "Desenvolupador d'Aplicacions Web",
+      "course": "Curs Bàsic de JavaScript"
+    },
+    "john": {
+      "name": "John Smith",
+      "role": "Enginyer Backend",
+      "course": "Backend amb Node.js"
+    },
+    "emily": {
+      "name": "Emily Davis",
+      "role": "Professora de Bases de Dades",
+      "course": "Arquitectura i Bases de Dades"
+    }
+  },
+  "pricing": {
+    "header": {
+      "personal": "Personal",
+      "company": "Empresa"
+    },
+    "title": "Tria el pla ideal per a tu",
+    "basic": "Bàsic",
+    "expert": "Expert",
+    "expert_duo": "Expert Duo",
+    "period": {
+      "month": "Mes",
+      "year": "Anual"
+    },
+    "description": {
+      "basic": "Ideal per a ús personal",
+      "expert": "Ideal per a professionals",
+      "expert_duo": "Per a 2 persones"
+    },
+    "features": "Característiques",
+    "per_month": "/ Per mes",
+    "best_offer": "MILLOR OFERTA",
+    "start_plan": "Començar amb el {{plan}}",
+    "features_list": {
+      "professional_content": "Contingut professional i actualitzat",
+      "digital_certificates": "Certificats digitals",
+      "language_school": "Escola d'idiomes",
+      "download_content": "Descarregar contingut a l'app",
+      "customized_lessons": "Lliçons personalitzades"
+    }
+  },
+  "courses": {
+    "databases_sql": "Bases de dades amb SQL",
+    "backend_nodejs": "Backend amb Node.js",
+    "frontend_react": "Frontend amb React.js",
+    "basic_js": "Curs bàsic de JavaScript",
+    "c_plus_plus": "Programació en C++",
+    "java_dev": "Desenvolupament en Java",
+    "php_web": "PHP per Web",
+    "kotlin_android": "Kotlin per Android"
+  },
+  "my_courses": "Els meus cursos",
+  "course_status": {
+    "title": "Estat del curs",
+    "specialization": "Especialització",
+    "description": "Descripció",
+    "status": "Estat",
+    "last_time_date": "Última data",
+    "progress": "Progrés",
+    "statuses": {
+      "not_started": "No iniciat",
+      "started": "Iniciat",
+      "completed": "Completat"
+    }
+  },
+  "latest_courses": "Últims cursos llançats",
+  "progress_status": {
+    "title": "Gràfic de barres del progrés dels cursos",
+    "description": "Taxes recents de finalització dels cursos",
+    "courses": {
+      "databases_sql": "Bases de dades amb SQL",
+      "backend_nodejs": "Backend amb Node.js",
+      "frontend_react": "Frontend amb React",
+      "basic_js": "JavaScript bàsic"
+    },
+    "footer": {
+      "line1": "Tendència a l'alça aquest mes",
+      "line2": "Les anàlisis recents revelen millores significatives en els cursos.",
+      "line3": "El rendiment individual del curs supera les expectatives.",
+      "line4": "Informació detallada que potencia ajustos estratègics."
+    },
+    "hours": "hores"
+  },
+  "progress_timeline": {
+    "title": "Cronologia del progrés del curs",
+    "description": "Mitjana mensual ampliada del progrés",
+    "average_progress": "Progrés Mitjà",
+    "units": "unitats",
+    "footer": {
+      "line1": "Tendència a l'alça aquest mes",
+      "line2": "Mitjana del progrés del curs durant un període ampliat"
+    }
+  },
+  "progress_donut": {
+    "title": "Durada del curs",
+    "description": "Durada total en hores",
+    "courses": {
+      "databases_sql": "Bases de dades amb SQL",
+      "backend_nodejs": "Backend amb Node.js",
+      "frontend_react": "Frontend amb React.js",
+      "basic_js": "Curs bàsic de JavaScript"
+    },
+    "total_hours": "hores totals",
+    "hours": "hores"
+  }
+}

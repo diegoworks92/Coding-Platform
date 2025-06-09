@@ -17,9 +17,10 @@
     "baseUrl": "./src",
     "paths": {
       "@components/*": ["components/*"],
-      "@utils/*": ["utils/*"]
+      /* "@utils/*": ["utils/*"] */
+      "@lib/*": ["./lib/*"]
     },
-    "types": ["vite/client"] // ✅ Añadir esto
+    "types": ["vite/client"]
   },
-  "include": ["src"]
+  "include": ["src", "public/locales"]
 }
